@@ -1,11 +1,12 @@
-def area_circulo(r):
-    """Función que recibe el radio del circulo y calcula su area."""
-    area = 3.1415*r**2
-    return area
+import Modulo_A, Modulo_B
 
+print("Modulo A llama a a modulo B")
+Modulo_A.ident()
 
-diametro = 10
-area = area_circulo(diametro/2)
-print(f"Área del círculo de diámetro {diametro} es {area}.")
+print("Se llama al modulos B atraves del modulo A")
+Modulo_A.B.ident()
 
-#Prueba de funciones martes 904
+print("Se llama a moduluo B directamente.")
+Modulo_B.ident()
+
+#Ejemplo de modulos, intento de cambio en git con 2 archivos adicionales
