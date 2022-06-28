@@ -1,29 +1,27 @@
-class Alumno:
+class Persona:
 
-    def inicializar(self, nombre, nota):
+    def inicializar(self, nombre, edad):
+        
         self.nombre = nombre
-        self.nota = nota
+        self. edad = edad
     
     def imprimir(self):
-        print("Nombre:", self.nombre)
-        print("Nota:", self.nota)
-
-    def mostrar_estado(self):
-        
-        if self.nota >= 4:
-            print("Regular")
-        else:
-            print("Libre")
+        print("Nombre:", self.nombre, "\nEdad:", self.edad)
     
+    def es_mayor(self):
 
-alumno1 = Alumno()
-alumno1.inicializar("Diego", 2)
-alumno1.imprimir()
-alumno1.mostrar_estado()
+        if self.edad >= 18:
+            print("Es mayor de edad.")
 
-alumno2 = Alumno()
-alumno2.inicializar("Ana", 10)
-alumno2.imprimir()
-alumno2.mostrar_estado()
+        else:
+            print("Es menor de edad.")
 
-#Practica 2 POO 29/06/22
+nom1 = input("Ingresa el nombre de una persona:\n")
+edad1 = int(input("Ingresa la edad de la persona:\n"))
+
+persona1 = Persona()
+persona1.inicializar(nom1, edad1)
+persona1.imprimir()
+persona1.es_mayor()
+
+#Problema 1 POO 29/06/22 
