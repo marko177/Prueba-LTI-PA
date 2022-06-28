@@ -1,27 +1,38 @@
-class Persona:
+class Triangulo:
 
-    def inicializar(self, nombre, edad):
+    def inicializar(self, lado1, lado2, lado3):
+
+        self.lado1 = lado1
+        self.lado2 = lado2
+        self.lado3 = lado3
+    
+    def imprimir_lado_mayor(self):
         
-        self.nombre = nombre
-        self. edad = edad
-    
-    def imprimir(self):
-        print("Nombre:", self.nombre, "\nEdad:", self.edad)
-    
-    def es_mayor(self):
+        lado_mayor = self.lado1
 
-        if self.edad >= 18:
-            print("Es mayor de edad.")
+        if lado_mayor < self.lado2:
+            lado_mayor = self.lado2
+        
+        if lado_mayor < self.lado3:
+            lado_mayor = self.lado3
+        
+        print(f"El lado mayor es {lado_mayor}.")
+    
+    def es_equilatero(self):
+
+        if self.lado1 == self.lado2 and self.lado1 == self.lado3:
+            print("Es equilatero.")
 
         else:
-            print("Es menor de edad.")
+            print("No es equilatero.")
 
-nom1 = input("Ingresa el nombre de una persona:\n")
-edad1 = int(input("Ingresa la edad de la persona:\n"))
+lado1 = int(input("Ingrese el primer lado del triangulo:\n"))
+lado2 = int(input("Ingrese el segundo lado del triangulo:\n"))
+lado3 = int(input("Ingrese el tercer lado del triangulo:\n"))
 
-persona1 = Persona()
-persona1.inicializar(nom1, edad1)
-persona1.imprimir()
-persona1.es_mayor()
+triangulo = Triangulo()
+triangulo.inicializar(lado1, lado2, lado3)
+triangulo.imprimir_lado_mayor()
+triangulo.es_equilatero()
 
-#Problema 1 POO 29/06/22 
+#Problema 2 Programacion Orientada a Objetos 29/06/22
