@@ -1,12 +1,22 @@
-import Modulo_A, Modulo_B
+class Persona:
 
-print("Modulo A llama a a modulo B")
-Modulo_A.ident()
+    def inicializar(self, name):
+        self.nombre = name
+    
 
-print("Se llama al modulos B atraves del modulo A")
-Modulo_A.B.ident()
+    def imprimir_nombre(self):
+        print("Nombre:", self.nombre)
 
-print("Se llama a moduluo B directamente.")
-Modulo_B.ident()
 
-#Ejemplo de modulos, intento de cambio en git con 2 archivos adicionales
+nom1 = input("Ingresa un nombre:\n")
+nom2 = input("Ingresa otro nombre:\n" )
+
+persona1 = Persona()
+persona1.inicializar(nom1)
+persona1.imprimir_nombre()
+
+persona2 = Persona()
+persona2.inicializar(nom2)
+persona2.imprimir_nombre()
+
+#Practica POO 29/06/22
