@@ -1,19 +1,30 @@
-class Cuadrado:
+class Operacion:
 
     def __init__(self):
 
-        self.lado = float(input("Ingrese la longitud de un lado del cuadrado:\n"))
+        self.num1 = float(input("Ingrese un numero:\n"))
+        self.num2 = float(input("Ingrese otro numero:\n"))
 
-    def imprimir_perimietro(self):
+    def suma(self):
 
-        print(f"El perimetro del cuadrado es {self.lado * 4}")
+        print(f"La suma de {self.num1} más {self.num2} es: {self.num1 + self.num2}")
 
-    def imprimir_area(self):
+    def resta(self):
 
-        print(f"El area del cuadrado es: {self.lado * self.lado}")
+        print(f"La resta de {self.num1} menos {self.num2} es: {self.num1 - self.num2}")
 
-cuadrado1 = Cuadrado()
-cuadrado1.imprimir_perimietro()
-cuadrado1.imprimir_area()
+    def multiplicacion(self):
 
-# Problema 1 POO con __init__ 30/06/22
+        print(f"La multiplicación de {self.num1} por {self.num2} es: {self.num1 * self.num2}")
+
+    def division(self):
+
+        print(f"La división de {self.num1} entre {self.num2} es: {self.num1 / self.num2}")
+
+operacion1 = Operacion()
+operacion1.suma()
+operacion1.resta()
+operacion1.multiplicacion()
+operacion1.division()
+
+# Problema 2 POO con __init__ 30/06/22
