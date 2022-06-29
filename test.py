@@ -1,24 +1,41 @@
-class Empleado:
-    
-    def __init__(self):
-        self.nombre = input("Ingrese el nombre del empleado:\n")
-        self.sueldo = float(input("Ingrese el sueldo:\n"))
+class Punto:
+
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
     
     def imprimir(self):
+        print("Cordenadas del punto")
+        print(f"({self.x},{self.y})")
 
-        print("Nombre:", self.nombre)
-        print("Sueldo:", self.sueldo)
-    
-    def paga_impuestos(self):
+    def imprimir_cuadrante(self):
+
+        if self.x > 0 and self.y > 0:
+            print("Primer cuadrante.")
+
+        elif self.x < 0 and self.y > 0:
+            print("Segundo cuadrante")
         
-        if self.sueldo > 3000:
-            print("Debe pagar impuestos")
+        elif self.x < 0 and self.y < 0:
+            print("Tercer cuadrante")
+        
+        elif self.x > 0 and self.y < 0:
+            print("Cuarto cuadrante")
 
-        else:
-            print("No paga impuestos")
+punto1 = Punto(2, 3)
+punto1.imprimir()
+punto1.imprimir_cuadrante()
 
-empleado1 = Empleado()
-empleado1.imprimir()
-empleado1.paga_impuestos()
+punto2 = Punto(-3, 1)
+punto2.imprimir()
+punto2.imprimir_cuadrante()
 
-#Prueba 1 de POO con __init__ 30/06/22
+punto3 = Punto(-1, -2)
+punto3.imprimir()
+punto3.imprimir_cuadrante()
+
+punto4 = Punto(10, -2)
+punto4.imprimir()
+punto4.imprimir_cuadrante()
+
+# Prueba 2 de POO con __init__ 30/06/22
