@@ -1,38 +1,24 @@
-class Triangulo:
-
-    def inicializar(self, lado1, lado2, lado3):
-
-        self.lado1 = lado1
-        self.lado2 = lado2
-        self.lado3 = lado3
+class Empleado:
     
-    def imprimir_lado_mayor(self):
-        
-        lado_mayor = self.lado1
-
-        if lado_mayor < self.lado2:
-            lado_mayor = self.lado2
-        
-        if lado_mayor < self.lado3:
-            lado_mayor = self.lado3
-        
-        print(f"El lado mayor es {lado_mayor}.")
+    def __init__(self):
+        self.nombre = input("Ingrese el nombre del empleado:\n")
+        self.sueldo = float(input("Ingrese el sueldo:\n"))
     
-    def es_equilatero(self):
+    def imprimir(self):
 
-        if self.lado1 == self.lado2 and self.lado1 == self.lado3:
-            print("Es equilatero.")
+        print("Nombre:", self.nombre)
+        print("Sueldo:", self.sueldo)
+    
+    def paga_impuestos(self):
+        
+        if self.sueldo > 3000:
+            print("Debe pagar impuestos")
 
         else:
-            print("No es equilatero.")
+            print("No paga impuestos")
 
-lado1 = int(input("Ingrese el primer lado del triangulo:\n"))
-lado2 = int(input("Ingrese el segundo lado del triangulo:\n"))
-lado3 = int(input("Ingrese el tercer lado del triangulo:\n"))
+empleado1 = Empleado()
+empleado1.imprimir()
+empleado1.paga_impuestos()
 
-triangulo = Triangulo()
-triangulo.inicializar(lado1, lado2, lado3)
-triangulo.imprimir_lado_mayor()
-triangulo.es_equilatero()
-
-#Problema 2 Programacion Orientada a Objetos 29/06/22
+#Prueba 1 de POO con __init__ 30/06/22
