@@ -1,11 +1,11 @@
-lista = [101, 50, 200, 100, 150, 17, 20, 80]
+lista = [1, 3, 7, 18, 31]
 
-mayor_100 = 0
+mayor_7 = []
 
 for i in lista:
-    if i > 100:
-        mayor_100 += 1
+    if i > 7:
+        mayor_7.append(i)
 
-print(f"En la lista {lista}, hay {mayor_100} valor/es mayor/es a 100.")
+print(f"En la lista {lista}, los siguientes son mayores a 7: {mayor_7}")
 
-#Problema 1 Listas 04/07/2022
+#Problema 2 Listas 04/07/2022
