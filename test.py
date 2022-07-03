@@ -1,25 +1,28 @@
-class Operacion:
+#numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#print(numeros)
 
-    def __init__(self):
-        self.num1 = float(input("Ingrese un numero:\n"))
-        self.num2 = float(input("Ingrese otro numero:\n"))
-        self.suma()
-        self.resta()
-        self.multiplicacion()
-        self.division()
+#elementos = [3, "a", 8, 7.2 , "hola"]
+#print(elementos)
 
-    def suma(self):
-        print(f"La suma de {self.num1} más {self.num2} es: {self.num1 + self.num2}")
+#vocales = list("aeiou")
+#print(vocales)
 
-    def resta(self):
-        print(f"La resta de {self.num1} menos {self.num2} es: {self.num1 - self.num2}")
+#vocales = ["a", "e", "i", "o", "u"]
+#print(vocales[1])
+#print(vocales[4])
 
-    def multiplicacion(self):
-        print(f"La multiplicación de {self.num1} por {self.num2} es: {self.num1 * self.num2}")
+#lista = ["a", ["x", "y"], "z"]
+#print(lista[1][1])
 
-    def division(self):
-        print(f"La división de {self.num1} entre {self.num2} es: {self.num1 / self.num2}")
+#vocales = ["a", "e", "i", "o", "u"]
+#print(vocales[-1])
+#print(vocales[-4])
 
-operacion1 = Operacion()
+vocales = ["a", "e", "i", "o", "u"]
+print(vocales[2:3])
+print(vocales[2:4])
+print(vocales[:])
+print(vocales[1:])
+print(vocales[:3])
 
-# Problema 1 POO llamando un metodo de la misma clase desde __init__ 30/06/22
+#Ejemplo 1 Listas 04/07/2022
