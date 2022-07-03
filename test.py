@@ -1,28 +1,14 @@
-#numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-#print(numeros)
+lista = [10 , 7, 3, 7, 2]
 
-#elementos = [3, "a", 8, 7.2 , "hola"]
-#print(elementos)
+suma = 0
+x = 0
 
-#vocales = list("aeiou")
-#print(vocales)
+while x < len(lista):
 
-#vocales = ["a", "e", "i", "o", "u"]
-#print(vocales[1])
-#print(vocales[4])
+    suma += lista[x]
+    x += 1
 
-#lista = ["a", ["x", "y"], "z"]
-#print(lista[1][1])
+print(f"Los elementos de la lista son:\n{lista}")
+print(f"La suma de todos sus elementos es: {suma}")
 
-#vocales = ["a", "e", "i", "o", "u"]
-#print(vocales[-1])
-#print(vocales[-4])
-
-vocales = ["a", "e", "i", "o", "u"]
-print(vocales[2:3])
-print(vocales[2:4])
-print(vocales[:])
-print(vocales[1:])
-print(vocales[:3])
-
-#Ejemplo 1 Listas 04/07/2022
+#Prueba 1 Listas 04/07/2022  
