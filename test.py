@@ -1,11 +1,11 @@
-lista = [1, 3, 7, 18, 31]
+lista = ["marco", "leslie", "michelle", "ana", "luz"]
 
-mayor_7 = []
+mayor_5 = []
 
 for i in lista:
-    if i >= 7:
-        mayor_7.append(i)
+    if len(i) >= 5:
+        mayor_5.append(i)
 
-print(f"En la lista {lista}, los siguientes son mayores a 7: {mayor_7}.")
+print(f"En la lista {lista}, los siguientes nombres tienen 5 o mas caracteres: {mayor_5}")
 
-#Corrección Problema 2 Listas 04/07/2022
+#Problema 3 Listas 04/07/2022
