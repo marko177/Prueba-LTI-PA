@@ -1,11 +1,10 @@
-lista = ["marco", "leslie", "michelle", "ana", "luz"]
+lista = []
 
-mayor_5 = 0
+for x in range(5):
+    
+    valor = int(input("Ingrese un valor entero:\n"))
+    lista.append(valor)
 
-for i in lista:
-    if len(i) >= 5:
-        mayor_5 += 1
+print(lista)
 
-print(f"En la lista {lista}, hay {mayor_5} nombres que tienen 5 o mas caracteres")
-
-#Corrección Problema 3 Listas 04/07/2022
+#Prueba 1 Listas Append 04/07/2022
