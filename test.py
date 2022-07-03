@@ -1,7 +1,11 @@
-lista = ["ana", 7, 9]
+lista = [101, 50, 200, 100, 150, 17, 20, 80]
 
-print(f"Nombre del alumno: {lista[0]}")
-promedio = (lista[1] + lista[2]) / 2
-print(f"Promedio de sus dos notas: {promedio}")
+mayor_100 = 0
 
-#Prueba 3 Listas 04/07/2022
+for i in lista:
+    if i > 100:
+        mayor_100 += 1
+
+print(f"En la lista {lista}, hay {mayor_100} valor/es mayor/es a 100.")
+
+#Problema 1 Listas 04/07/2022
