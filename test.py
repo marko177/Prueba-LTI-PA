@@ -1,12 +1,28 @@
-lista = [6000, 8000, 10000, 12000, 18000]
+lista = []
 
-total_salarios = 0
+for x in range(5):
+    altura = float(input("Ingrese la altura:\n"))
+    lista.append(altura)
+
+total_altura = 0
+promedio = 0
+altos = 0
+bajos = 0
 
 for i in lista:
-    total_salarios += i
 
-promedio = total_salarios / len(lista)
+    total_altura += i
+    
+    if i == lista[-1]:
+        promedio = round(total_altura / len(lista), 2)
 
-print(f"Los salarios son:\n{lista}\nEl promedio es: {promedio}")
+for i in lista:
+    if i > promedio:
+        altos += 1
+    
+    else:
+        bajos += 1
 
-# Problema 1 Listas 05/07/22
+print(f"Las alturas son:\n{lista}\nEl promedio de alutra es de: {promedio}\nHay {altos} personas mas altas que el promedio y {bajos} igual o mas bajos que el promedio.")
+
+# Problema 2 Listas 05/07/2022	
