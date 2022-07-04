@@ -1,22 +1,26 @@
-lista = []
+nombres = []
+sueldos = []
 
-for x in range(10):
+for x in range(5):
     
-    valor = int(input("Ingrese valor:"))
-    lista.append(valor)
-
-print(lista)
+    nombre = input("Ingrese el nombre del empleado:\n")
+    sueldo = int(input("Ingrese el sueldo del empleado:\n"))
+    
+    nombres.append(nombre)
+    sueldos.append(sueldo)
 
 posicion = 0
 
-while posicion < len(lista):
+while posicion < len(nombres):
 
-    if lista[posicion] == 5:
-        lista.pop(posicion)
+    if sueldos[posicion] > 10000:
+        
+        nombres.pop(posicion)
+        sueldos.pop(posicion)
 
     else:
         posicion += 1
 
-print(lista)
+print(f"Los empleados con sueldos menores a $10,000 y sus sueldos:\n{nombres}\n{sueldos}")
 
-# Prueba 2 Lista.pop 05/07/2022
+# Problema 1 Lista.pop 05/07/2022
