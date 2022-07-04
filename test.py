@@ -1,28 +1,18 @@
-lista = []
+lista_m = []
+lista_t = []
 
-for x in range(5):
-    altura = float(input("Ingrese la altura:\n"))
-    lista.append(altura)
-
-total_altura = 0
-promedio = 0
-altos = 0
-bajos = 0
-
-for i in lista:
-
-    total_altura += i
+for x in range(4):
     
-    if i == lista[-1]:
-        promedio = round(total_altura / len(lista), 2)
-
-for i in lista:
-    if i > promedio:
-        altos += 1
+    sueldo = int(input("Ingrese el salario del empleado del turno de mañana:\n"))
     
-    else:
-        bajos += 1
+    lista_m.append(sueldo)
 
-print(f"Las alturas son:\n{lista}\nEl promedio de alutra es de: {promedio}\nHay {altos} personas mas altas que el promedio y {bajos} igual o mas bajos que el promedio.")
+for x in range(4):
 
-# Problema 2 Listas 05/07/2022	
+    sueldo = int(input("Ingrese el salario del empleado del turno de tarde:\n"))
+    
+    lista_t.append(sueldo)
+
+print(f"Los sueldos del turno de la mañana son: {lista_m}\nLos sueldos del turno de la tarde son: {lista_t}")
+
+# Problema 3 Listas 05/07/2022	
