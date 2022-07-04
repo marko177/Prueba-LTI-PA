@@ -1,11 +1,22 @@
-lista=[10, 20, 30, 40, 50]
+lista = []
+
+for x in range(10):
+    
+    valor = int(input("Ingrese valor:"))
+    lista.append(valor)
 
 print(lista)
 
-lista.pop(0)
-lista.pop(1)
-lista.pop(2)
+posicion = 0
+
+while posicion < len(lista):
+
+    if lista[posicion] == 5:
+        lista.pop(posicion)
+
+    else:
+        posicion += 1
 
 print(lista)
 
-# Prueba 1 Lista.pop 05/07/2022
+# Prueba 2 Lista.pop 05/07/2022
