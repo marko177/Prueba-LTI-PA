@@ -1,12 +1,12 @@
-lista = []
+lista = [6000, 8000, 10000, 12000, 18000]
 
-valor = int(input("Ingrese un valor entero (0 para terminar):\n"))
+total_salarios = 0
 
-while valor != 0:
+for i in lista:
+    total_salarios += i
 
-    lista.append(valor)
-    valor = int(input("Ingrese un valor entero (0 para terminar):\n"))
-print(f"Tamaño de la lista: {len(lista)}")
-print(lista)
+promedio = total_salarios / len(lista)
 
-#Prueba 1 Listas Input 05/07/2022
+print(f"Los salarios son:\n{lista}\nEl promedio es: {promedio}")
+
+# Problema 1 Listas 05/07/22
