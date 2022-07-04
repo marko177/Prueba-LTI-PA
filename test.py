@@ -1,18 +1,11 @@
-lista_m = []
-lista_t = []
+lista=[10, 20, 30, 40, 50]
 
-for x in range(4):
-    
-    sueldo = int(input("Ingrese el salario del empleado del turno de mañana:\n"))
-    
-    lista_m.append(sueldo)
+print(lista)
 
-for x in range(4):
+lista.pop(0)
+lista.pop(1)
+lista.pop(2)
 
-    sueldo = int(input("Ingrese el salario del empleado del turno de tarde:\n"))
-    
-    lista_t.append(sueldo)
+print(lista)
 
-print(f"Los sueldos del turno de la mañana son: {lista_m}\nLos sueldos del turno de la tarde son: {lista_t}")
-
-# Problema 3 Listas 05/07/2022	
+# Prueba 1 Lista.pop 05/07/2022
