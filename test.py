@@ -1,25 +1,20 @@
-lista = []
+sueldos = []
 
 for x in range(5):
-    
-    numero = int(input("Ingrese un numero:\n"))
-    
-    lista.append(numero)
 
-print(f"La lista de numeros es: {lista}.")
+    valor = int(input("Ingrese un sueldo:\n"))
+    sueldos.append(valor)
 
-posicion = 0
+print(f"Lista sin ordenar: {sueldos}")
 
-while posicion < len(lista):
+for x in range(4):
 
-    if lista[posicion] >= 10:
-        
-        lista.pop(posicion)
-        
-    else:
-        posicion += 1
+    if sueldos[x] > sueldos[x + 1]:
 
+        aux = sueldos[x]
+        sueldos[x] = sueldos [x +1] 
+        sueldos[x + 1] = aux
 
-print(f"La lista sin numeros iguales o mayores a 10: {lista}")
+print(f"Lista con el último elemento ordenado: {sueldos}")
 
-# Problema 2 Lista.pop 05/07/2022
+# Prueba 1 Ordenamiento de listas 06/07/2022
