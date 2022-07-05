@@ -1,8 +1,6 @@
-archi1 = open("datos.txt", "w")
-archi1.write("Primer línea.\n")
-archi1.write("Segunda línea.\n")
-archi1.write("Tercer línea.\n")
+archi1 = open("datos.txt", "r")
+contenido = archi1.read()
+print(contenido)
 archi1.close()
 
-
-# Prueba 1 Crear archivos desde python 06/07/2022
+# Prueba 1 Leer archivos desde python 06/07/2022
