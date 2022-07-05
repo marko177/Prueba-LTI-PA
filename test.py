@@ -1,20 +1,26 @@
-paises = []
+sueldos = []
 
-for x in range(5):
+num_empleados = int(input("Ingrese el numero de empleados:\n"))
 
-    nom = input("Ingrese el nombre de un pais:\n")
-    paises.append(nom)
-
-for k in range(4):
+for x in range(num_empleados):
     
-    for x in range(4 - k):
+    sueldo = int(input("Ingrese el sueldo del empleado:\n"))
+    sueldos.append(sueldo)
 
-        if paises[x] > paises[x + 1]:
+print(f"Lista de sueldos sin ordenar:\n{sueldos}")
 
-            aux = paises[x]
-            paises[x] = paises[x + 1]
-            paises[x + 1] = aux
+for k in range(len(sueldos) - 1):
 
-print(f"Listado de paises:\n{paises}")
+    for x in range((len(sueldos) - 1) - k):
 
-# Problema 1 Ordenado de listas 06/07/2022
+        if sueldos[x] > sueldos[x + 1]:
+            
+            aux = sueldos[x]
+            sueldos[x] = sueldos[x + 1]
+            sueldos[x + 1] = aux
+
+
+print(f"Lista de sueldos ordenados:\n{sueldos}")
+
+# Problema 2 Ordenado de listas 06/07/2022
+
