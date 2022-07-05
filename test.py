@@ -1,36 +1,8 @@
-lista_num = []
-
-for x in range(5):
-    
-    num = int(input("Ingrese un numero entero:\n"))
-    lista_num.append(num)
-
-print(f"Lista de numeros sin ordenar:\n{lista_num}")
-
-for k in range(len(lista_num) - 1):
-
-    for x in range((len(lista_num) - 1)):
-
-        if lista_num[x] > lista_num[x + 1]:
-            
-            aux = lista_num[x]
-            lista_num[x] = lista_num[x + 1]
-            lista_num[x + 1] = aux
+archi1 = open("datos.txt", "w")
+archi1.write("Primer línea.\n")
+archi1.write("Segunda línea.\n")
+archi1.write("Tercer línea.\n")
+archi1.close()
 
 
-print(f"Lista de numeros ordenados menor a mayor:\n{lista_num}")
-
-for k in range(len(lista_num) - 1):
-
-    for x in range((len(lista_num) - 1)):
-
-        if lista_num[x] < lista_num[x + 1]:
-            
-            aux = lista_num[x]
-            lista_num[x] = lista_num[x + 1]
-            lista_num[x + 1] = aux
-
-
-print(f"Lista de numeros ordenados mayor a menor:\n{lista_num}")
-
-# Problema 3 Ordenado de listas 06/07/2022
+# Prueba 1 Crear archivos desde python 06/07/2022
