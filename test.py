@@ -1,14 +1,16 @@
-archi1 = open("datos.txt", "r")
+archi1 = open("datos.txt", "a")
 
-lineas = archi1.readlines()
-
-print("El archivo tiene", len(lineas), "líneas")
-print("El contenido del archivo")
-
-for linea in lineas:
-
-    print(linea, end = "")
+archi1.write("nueva línea 1\n")
+archi1.write("nueva línea 2\n")
 
 archi1.close()
 
-# Prueba 2 Leer archivos por linea desde python 06/07/2022
+archi1 = open("datos.txt", "r")
+
+contenido = archi1.read()
+print(contenido)
+
+archi1.close()
+
+
+# Prueba 1 Agregar a archivos 06/07/2022
