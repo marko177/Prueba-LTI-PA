@@ -1,10 +1,4 @@
 import csv
-
-myData = [["first_name", "second_name", "Grade"], 
-        ["Alex", "Brian", "A"],
-        ["Tom", "Smith", "B"]]
-
-import csv
  
 myData = [["first_name", "second_name", "Grade"],
           ['Alex', 'Brian', 'A'],
