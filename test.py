@@ -1,16 +1,15 @@
 import csv
- 
-myData = [["first_name", "second_name", "Grade"],
-          ['Alex', 'Brian', 'A'],
-          ['Tom', 'Smith', 'B']]
- 
-myFile = open('example2.csv', 'w')
+with open("example4.csv", "w") as csvfile:
+    fieldnames = ["first_name", "last_name", "Grade"]
 
-with myFile:
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
-    writer = csv.writer(myFile)
-    writer.writerows(myData)
-     
-print("Writing complete")
+    writer.writeheader()
+    writer.writerow({"Grade": "B", "first_name": "Alex", "last_name": "Brian"})
+    writer.writerow({"Grade": "A", "first_name": "Rachael", "last_name": "Rodriguez"})
+    writer.writerow({"Grade": "B", "first_name": "Jane", "last_name": "Oscar"})
+    writer.writerow({"Grade": "B", "first_name": "Jane", "last_name": "Loive"})
+    
+    print("Writing complete")
 
-# Prueba 2 Archivos CSV 07/07/2022
+# Prueba 3 Archivos CSV 07/07/2022
